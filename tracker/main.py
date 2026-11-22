@@ -13,7 +13,7 @@ def initialize_db():
                      note text
                     )
                 """)
-    conn.commit() #commiting since we want user back after relogging
+    conn.commit()
     conn.close()
 initialize_db() #calling the defined function
 app = FastAPI()
